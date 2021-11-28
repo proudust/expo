@@ -2,8 +2,8 @@
 
 import ExpoModulesCore
 
-public class ScreenOrientationReactDelegateHandler: EXReactDelegateHandler {
-  public override func createRootViewController(_ reactDelegate: EXReactDelegate) -> UIViewController? {
+public class ScreenOrientationReactDelegateHandler: ExpoReactDelegateHandler {
+  public override func createRootViewController(reactDelegate: ExpoReactDelegate) -> UIViewController? {
     return EXScreenOrientationViewController()
   }
 }
